@@ -1,0 +1,6 @@
+{
+  "name": "Masaraddi Neuro Care Center",
+  "description": "Hospital website for Masaraddi Neuro Care Center in Bagalkot, Karnataka, featuring Dr. Shivkumar Masaraddi (DM Neurology), complete neurological services, stroke care, epilepsy management, 7 ICU beds, and direct hospital contact.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

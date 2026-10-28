@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Path for curved upper text: MASARADDI -->
+    <!-- Center (250, 250), radius 202, sweep from ~205 deg to ~335 deg (CW over top) -->
+    <path id="text-arc-top" d="M 68 335 A 202 202 0 1 1 432 335" fill="none" />
+    
+    <!-- Path for curved lower text: NEURO CARE CENTRE -->
+    <!-- Radius 202, sweep across bottom from left to right -->
+    <path id="text-arc-bottom" d="M 95 330 A 205 205 0 0 0 405 330" fill="none" />
+
+    <!-- Clip path for the bottom maroon banner (curved rocker) -->
+    <clipPath id="inner-circle-clip">
+      <circle cx="250" cy="250" r="162" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer background and thin boundary ring -->
+  <circle cx="250" cy="250" r="248" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- Outer Ring - Royal Blue Banner (#1558A6) -->
+  <circle cx="250" cy="250" r="242" fill="#1558A6" />
+
+  <!-- Lower Curved Banner - Deep Crimson / Maroon (#880E14) -->
+  <!-- Creates the exact shape seen in the logo: curved rocker spanning bottom ~130 degrees -->
+  <path d="M 28 320 
+           A 242 242 0 0 0 472 320 
+           C 475 345, 460 365, 435 375 
+           C 385 435, 320 480, 250 480 
+           C 180 480, 115 435, 65 375 
+           C 40 365, 25 345, 28 320 Z" 
+        fill="#880E14" />
+  
+  <!-- Subtle arc divider between blue and maroon with smooth caps -->
+  <path d="M 28 320 Q 55 295 86 312" fill="#880E14" />
+  <path d="M 472 320 Q 445 295 414 312" fill="#880E14" />
+
+  <!-- White ring separating outer banners from the inner medallion -->
+  <circle cx="250" cy="250" r="165" fill="#EEF2F6" stroke="#FFFFFF" stroke-width="6" />
+
+  <!-- Outer text: MASARADDI (curved along top arch in white bold uppercase) -->
+  <text fill="#FFFFFF" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" letter-spacing="18">
+    <textPath href="#text-arc-top" startOffset="50%" text-anchor="middle">
+      MASARADDI
+    </textPath>
+  </text>
+
+  <!-- Lower text: NEURO CARE CENTRE (curved along bottom banner in white bold uppercase) -->
+  <text fill="#FFFFFF" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="29" letter-spacing="7">
+    <textPath href="#text-arc-bottom" startOffset="50%" text-anchor="middle">
+      NEURO CARE CENTRE
+    </textPath>
+  </text>
+
+  <!-- Inner Medallion Artwork (Clipped to inner circle) -->
+  <g clip-path="url(#inner-circle-clip)">
+    <!-- Right-facing Human Profile Silhouette (Royal Blue line art) -->
+    <!-- Profile stroke contour: Back of shoulder -> neck -> occiput -> crown -> forehead -> nasion -> nose -> lips -> chin -> jaw -> throat -> chest -->
+    <path d="
+      M 130 315
+      C 155 310, 185 285, 195 245
+      C 180 205, 182 155, 215 130
+      C 230 118, 255 116, 275 125
+      C 295 135, 305 155, 306 170
+      C 305 178, 300 182, 302 186
+      C 305 190, 326 195, 335 198
+      C 336 200, 331 204, 324 207
+      C 317 210, 314 213, 317 216
+      C 322 220, 321 224, 314 227
+      C 310 229, 312 234, 318 238
+      C 321 241, 317 246, 308 247
+      C 296 248, 280 256, 273 268
+      C 265 280, 275 295, 290 300
+      C 315 308, 345 312, 370 315
+    " 
+    fill="none" 
+    stroke="#1558A6" 
+    stroke-width="7" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" />
+
+    <!-- Human Brain inside Cranium (Deep Crimson / Maroon #880E14) -->
+    <!-- Anatomical cerebrum convolutions and gyri -->
+    <g fill="#880E14">
+      <!-- Main cerebral hemisphere mass with detailed convolutions -->
+      <path d="
+        M 228 145
+        C 220 148, 215 158, 218 168
+        C 214 175, 218 185, 226 188
+        C 225 194, 230 202, 238 205
+        C 246 208, 255 204, 258 198
+        C 264 203, 274 202, 280 196
+        C 287 194, 294 186, 296 178
+        C 299 168, 295 158, 288 152
+        C 285 145, 276 138, 268 140
+        C 260 135, 248 134, 240 138
+        C 234 140, 230 142, 228 145 Z
+      " />
+
+      <!-- Cerebellum lobe at base of occiput -->
+      <path d="
+        M 226 195
+        C 222 200, 224 210, 232 214
+        C 238 217, 246 215, 250 209
+        C 244 205, 238 200, 226 195 Z
+      " />
+    </g>
+
+    <!-- Brain gyri internal highlights / grooves (light cream lines) -->
+    <path d="
+      M 235 152 Q 248 150 258 156
+      M 262 148 Q 275 145 284 154
+      M 226 168 Q 238 165 248 172
+      M 252 166 Q 268 162 286 170
+      M 232 182 Q 245 180 258 188
+      M 262 184 Q 275 182 288 186
+      M 248 155 C 252 170, 252 185, 256 198
+      M 266 152 C 270 166, 272 180, 274 195
+    " 
+    fill="none" 
+    stroke="#EEF2F6" 
+    stroke-width="3" 
+    stroke-linecap="round" />
+
+    <!-- Spinal Cord Contour Canal (Blue guide curves) -->
+    <!-- Posterior spinal curve -->
+    <path d="M 235 220 C 238 250, 240 280, 242 320 C 243 350, 240 380, 236 410" 
+          fill="none" stroke="#1558A6" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Anterior spinal curve -->
+    <path d="M 254 225 C 255 255, 256 285, 253 320 C 250 350, 246 380, 242 410" 
+          fill="none" stroke="#1558A6" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Vertebral Column / Spinal Cord Discs (Maroon beads #880E14) -->
+    <g fill="#880E14">
+      <!-- Cervical down to thoracic vertebrae, progressively sized -->
+      <ellipse cx="244" cy="225" rx="5.5" ry="4.5" />
+      <ellipse cx="244.5" cy="237" rx="5.5" ry="4.5" />
+      <ellipse cx="245" cy="250" rx="5.5" ry="4.5" />
+      <ellipse cx="245.5" cy="264" rx="5.5" ry="4.5" />
+      <ellipse cx="246" cy="279" rx="5.2" ry="4.5" />
+      <ellipse cx="246" cy="295" rx="5" ry="4.5" />
+      <ellipse cx="245.5" cy="312" rx="4.8" ry="4.2" />
+      <ellipse cx="244.5" cy="330" rx="4.5" ry="4" />
+      <ellipse cx="243" cy="349" rx="4.2" ry="3.8" />
+      <ellipse cx="241" cy="368" rx="3.8" ry="3.5" />
+      <ellipse cx="239" cy="386" rx="3.4" ry="3.2" />
+      <ellipse cx="237" cy="402" rx="2.8" ry="2.8" />
+    </g>
+  </g>
+</svg>
